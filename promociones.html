@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Biblioteca</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md nav_headerContainer">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="img_logo" src="img/logo.jpg"
+                        alt="LA BIBLIOTECA"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="promociones.html">PROMOCIONES</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
+                                aria-expanded="false">CATÁLOGO</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="#">Arte, Arquitectura y Diseño</a></li>
+                                <li><a class="dropdown-item" href="#">Ciencias</a></li>
+                                <li><a class="dropdown-item" href="#">Educación</a></li>
+                                <li><a class="dropdown-item" href="#">Esoterismo</a></li>
+                                <li><a class="dropdown-item" href="#">Ficción y Literatura</a></li>
+                                <li><a class="dropdown-item" href="#">Gastronomía</a></li>
+                                <li><a class="dropdown-item" href="#">Infantil y juvenil</a></li>
+                                <li><a class="dropdown-item" href="#">Negocios</a></li>
+                                <li><a class="dropdown-item" href="#">Turismo</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ENVÍOS</a>
+                        </li>
+
+
+                    </ul>
+                    <form role="search">
+                        <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <!-- Marketing messaging and featurettes
+          ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing div_seccionProductos">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="div_sectionTitle">
+                    <h2>OFERTAS DÍA DEL PADRE</h2>
+                </div>
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/como-era-ser-pequeno.jpg" alt="">
+                    <title>CESP</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Cómo era ser pequeño</h2>
+                    <p>Luis Pescetti <br>
+                        Editorial Siglo XXI</p>
+                    <p class="p_precioLista">$ 2.599</p>
+                    <span class="span_precioOferta">$ 1.899</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/el-arte-de-la-guerra.jpg" alt="">
+                    <title>EADLG</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">El arte de la guerra</h2>
+                    <p>Sun Tzu <br>
+                        Editorial Alfaguara</p>
+                    <p class="p_precioLista">$ 1.999</p>
+                    <span class="span_precioOferta">$ 1.499</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/boquita.png" alt="">
+                    <title>Boquita</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Boquita</h2>
+                    <p>Martín Caparrós <br>
+                        Editorial Sudamericana</p>
+                    <p class="p_precioLista">$ 2.899</p>
+                    <span class="span_precioOferta">$ 2.199</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="div_sectionTitle">
+                    <h2>DESCUENTOS IMPERDIBLES! </h2>
+                </div>
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/como-era-ser-pequeno.jpg" alt="">
+                    <title>CESP</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Cómo era ser pequeño</h2>
+                    <p>Luis Pescetti <br>
+                        Editorial Siglo XXI</p>
+                    <p class="p_precioLista">$ 2.599</p>
+                    <span class="span_precioOferta">$ 1.899</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/el-arte-de-la-guerra.jpg" alt="">
+                    <title>EADLG</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">El arte de la guerra</h2>
+                    <p>Sun Tzu <br>
+                        Editorial Alfaguara</p>
+                    <p class="p_precioLista">$ 1.999</p>
+                    <span class="span_precioOferta">$ 1.499</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/boquita.png" alt="">
+                    <title>Boquita</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Boquita</h2>
+                    <p>Martín Caparrós <br>
+                        Editorial Sudamericana</p>
+                    <p class="p_precioLista">$ 2.899</p>
+                    <span class="span_precioOferta">$ 2.199</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/como-era-ser-pequeno.jpg" alt="">
+                    <title>CESP</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Cómo era ser pequeño</h2>
+                    <p>Luis Pescetti <br>
+                        Editorial Siglo XXI</p>
+                    <p class="p_precioLista">$ 2.599</p>
+                    <span class="span_precioOferta">$ 1.899</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/el-arte-de-la-guerra.jpg" alt="">
+                    <title>EADLG</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">El arte de la guerra</h2>
+                    <p>Sun Tzu <br>
+                        Editorial Alfaguara</p>
+                    <p class="p_precioLista">$ 1.999</p>
+                    <span class="span_precioOferta">$ 1.499</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/boquita.png" alt="">
+                    <title>Boquita</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Boquita</h2>
+                    <p>Martín Caparrós <br>
+                        Editorial Sudamericana</p>
+                    <p class="p_precioLista">$ 2.899</p>
+                    <span class="span_precioOferta">$ 2.199</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/como-era-ser-pequeno.jpg" alt="">
+                    <title>CESP</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Cómo era ser pequeño</h2>
+                    <p>Luis Pescetti <br>
+                        Editorial Siglo XXI</p>
+                    <p class="p_precioLista">$ 2.599</p>
+                    <span class="span_precioOferta">$ 1.899</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/el-arte-de-la-guerra.jpg" alt="">
+                    <title>EADLG</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">El arte de la guerra</h2>
+                    <p>Sun Tzu <br>
+                        Editorial Alfaguara</p>
+                    <p class="p_precioLista">$ 1.999</p>
+                    <span class="span_precioOferta">$ 1.499</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/boquita.png" alt="">
+                    <title>Boquita</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Boquita</h2>
+                    <p>Martín Caparrós <br>
+                        Editorial Sudamericana</p>
+                    <p class="p_precioLista">$ 2.899</p>
+                    <span class="span_precioOferta">$ 2.199</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/como-era-ser-pequeno.jpg" alt="">
+                    <title>CESP</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Cómo era ser pequeño</h2>
+                    <p>Luis Pescetti <br>
+                        Editorial Siglo XXI</p>
+                    <p class="p_precioLista">$ 2.599</p>
+                    <span class="span_precioOferta">$ 1.899</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/el-arte-de-la-guerra.jpg" alt="">
+                    <title>EADLG</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">El arte de la guerra</h2>
+                    <p>Sun Tzu <br>
+                        Editorial Alfaguara</p>
+                    <p class="p_precioLista">$ 1.999</p>
+                    <span class="span_precioOferta">$ 1.499</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4 div_producto">
+                    <img class="img_producto" src="img/boquita.png" alt="">
+                    <title>Boquita</title>
+                    <rect width="100%" height="100%" fill="#777" />
+
+                    <h2 class="fw-normal">Boquita</h2>
+                    <p>Martín Caparrós <br>
+                        Editorial Sudamericana</p>
+                    <p class="p_precioLista">$ 2.899</p>
+                    <span class="span_precioOferta">$ 2.199</span>
+                    <span class="span_descuento">25% OFF</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar al carrito &raquo;</button>
+                </div><!-- /.col-lg-4 -->
+
+            </div><!-- /.row -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ¡Buena elección! Tu producto ha sido añadido al carrito.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+                            <button type="button" class="btn btn-primary btn_pago">Ir al pago</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Volver a subir</a></p>
+            <p>&copy; Todos los derechos reservados &middot; </p>
+        </footer>
+    </main>
+
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

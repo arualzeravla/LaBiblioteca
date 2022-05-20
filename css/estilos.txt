@@ -1,0 +1,4 @@
+paleta:
+
+celeste letra logo:
+#12CDCD
