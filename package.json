@@ -1,0 +1,23 @@
+{
+  "name": "labibliotecaconbootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arualzeravla/LaBibliotecaConBootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arualzeravla/LaBibliotecaConBootstrap/issues"
+  },
+  "homepage": "https://github.com/arualzeravla/LaBibliotecaConBootstrap#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
