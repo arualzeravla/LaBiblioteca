@@ -110,3 +110,15 @@ a:hover{
     background-color: #1c8585;
 }
 
+/* FORM DE COMPRA */
+
+#formCompra {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 30%;
+}
+
+.inputFieldCompra{
+    margin-bottom: 20px;
+}
+
