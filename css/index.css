@@ -14,6 +14,8 @@ a:hover{
     color: black;
 }
 
+/* HOME */
+
 /* NAV BAR */
 .img_logo{
     max-width: 100px;
@@ -112,6 +114,13 @@ a:hover{
 
 /* FORM DE COMPRA */
 
+#h1_tituloCarrito{
+    font-weight: bold;
+    text-align: center;
+    color: rgb(57, 57, 57);
+    padding-top: 20px;
+}
+
 #formCompra {
     display: flex;
     flex-direction: column;
@@ -120,5 +129,30 @@ a:hover{
 
 .inputFieldCompra{
     margin-bottom: 20px;
+}
+
+#ul_carrito{
+    padding: 5%;
+}
+.li_itemCarrito{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 60% 35% 5%;
+    row-gap: 50px;
+}
+
+#div_precioTotal{
+    font-weight: bold;
+    padding: 0 43% 3% 38%;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (min-width: 600px){
+    #ul_carrito{
+        padding: 3% 30% 0 30%;
+    }
 }
 

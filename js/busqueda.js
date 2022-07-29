@@ -1,4 +1,4 @@
-//Mensaje de bienvenida
+/* //Mensaje de bienvenida
 alert ("Bienvenido a La Biblioteca. Aquí se abre la puerta a la imaginación. ¡Adelante!");
 
 //Definimos el stock:
@@ -29,4 +29,4 @@ if(libroBuscado2 === "undefined"){
             alert("¡Ups! Parece que tu libro aún no está en nuestro stock. Puedes solicitárnoslo por e-mail o whatsapp: 1166115623 - info@labiblioteca.com.ar")
 } else {
     alert (`¡Tenemos tu libro! Es de la editorial ${libroBuscado2.editorial} y sale $${libroBuscado2.precio}. Presiona OK y lo agregaremos a tu carrito.`)
-};
+}; */
