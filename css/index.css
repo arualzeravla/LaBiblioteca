@@ -14,6 +14,12 @@ a:hover{
     color: black;
 }
 
+#footer{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
 /* HOME */
 
 /* NAV BAR */
@@ -114,10 +120,6 @@ a:hover{
 
 /* CARRITO */
 
-.gridContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 #h1_tituloCarrito{
     font-weight: bold;
@@ -150,26 +152,25 @@ a:hover{
     
 }
 
-.tituloFormContainer{
+.tituloFormContainer {
     background-color: rgb(232, 206, 191);
-    padding: 1px 0;
-    margin-top: 10px;
-    width: 85%;
-    margin-left: 12.5%;
+    padding: 10px 0;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
 }
 
 .tituloFormCarrito{
-    margin-left: 10%;
-    margin-top: 20px;
+    margin: 0 5%;
     font-size: 18px;
-    line-height: 0.8em;
     font-weight: bold;
     color: rgb(12, 86, 103);
 }
 
-.tituloFormCarrito2{
-    width: 350px;
-    margin: 10px 0 10px 27%;
+.tituloFormContainer2{
+    padding: 0 20px;
+    margin: 25px 0;
+    width: 100%;
     text-align: center;
     font-weight: bold;
 }
@@ -178,10 +179,14 @@ a:hover{
     cursor: pointer;
 }
 
+#formContainer{
+    text-align: center;
+}
+
 #formCompra {
     display: flex;
     flex-direction: column;
-    margin: 5% 20% 5% 30%;
+    padding: 9%;
 }
 
 .inputFieldCompra{
@@ -199,9 +204,28 @@ a:hover{
     font-weight: bold;
 }
 
-@media (min-width: 600px){
+@media (min-width: 720px){
+
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
     #ul_carrito{
         padding: 3% 15% 5% 20%;
     }
+
+    .tituloFormContainer, .tituloFormContainer2{
+        margin-top: 10px;
+        width: 85%;
+        margin-left: 12.5%;
+    }
+
+    #formCompra{
+        padding: 0 5% 0 20%;
+    }
+    
 }
+
+
 
