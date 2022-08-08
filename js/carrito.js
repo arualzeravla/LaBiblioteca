@@ -20,6 +20,7 @@ let productos = [{
     }
 ]
 
+
 //CREO VARIABLE CARRITO
 let carrito;
 
@@ -35,6 +36,9 @@ function verificarCarrito() {
     }
 };
 
+verificarCarrito();
+
+
 //AGREGO UN EVENT LISTENER A TODOS LOS BOTONES "AGREGAR A CARRITO". BUSCO CUÁL ES EL PRODUCTO AGREGADO, SE EJECUTA LA FUNCIÓN verificarCarrito() PARA OBTENER EL ARRAY CARRITO QUE HAYA HASTA EL MOMENTO Y SE LE AGREGA EL PRODUCTO. LUEGO SE ENVÍA AL LOCAL STORAGE NUEVAMENTE. 
 
 let botonesCompra = document.querySelectorAll("button.btn");
@@ -43,7 +47,6 @@ botonesCompra.forEach((btn) => {
         let botonID = e.target.id;
         for (producto of productos) {
             if (botonID === producto.idBoton) {
-                verificarCarrito();
                 carrito.push(producto);
                 let carritoJ = JSON.stringify(carrito)
                 localStorage.setItem("carrito", carritoJ);

@@ -96,13 +96,17 @@ formulario.addEventListener("submit", validarFormulario);
 
 function validarFormulario(e) {
     e.preventDefault();
-    if (!e.target.children[0].value || !e.target.children[1].value || !e.target.children[2].value || !e.target.children[3].value) {
-        let mensaje = document.createElement("div");
-        mensaje.innerHTML = "Debes ingresar todos los datos solicitados";
-        document.body.append(mensaje);
+    let errorDiv = document.getElementById("errorDiv");
+
+    if (!e.target.children[0].value || !e.target.children[1].value || !e.target.children[2].value || !e.target.children[3].value || !e.target.children[4].value) {
+        errorDiv.classList.add("errorDiv")
+        errorDiv.innerHTML = " [x] Debes ingresar todos los datos solicitados";
     } else {
-        let mensaje = document.createElement("div");
-        mensaje.innerHTML = "Tu compra ha sido registrada. Recibirás el pedido de 3 a 5 días hábiiles.";
-        document.body.append(mensaje);
+        errorDiv.innerHTML = "";
+        Swal.fire({
+            icon: 'success',
+            title: '¡Tu compra ha sido realizada!',
+            text: 'Te contactaremos en menos de 48hs hábiles para confirmar el pago y acordar el envío.',
+          })
     }
 };

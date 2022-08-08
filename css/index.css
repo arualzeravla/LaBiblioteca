@@ -112,47 +112,96 @@ a:hover{
     background-color: #1c8585;
 }
 
-/* FORM DE COMPRA */
+/* CARRITO */
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 #h1_tituloCarrito{
     font-weight: bold;
     text-align: center;
     color: rgb(57, 57, 57);
-    padding-top: 20px;
+    padding: 20px 0;
+}
+
+
+#ul_carrito{
+    padding: 8% 5%;
+}
+.li_itemCarrito{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 60% 35% 5%;
+    padding-bottom: 10px;
+}
+
+#div_precioTotal{
+    font-weight: bold;
+    width: 50%;
+    margin: 20px 20%;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #bfe8e8;
+    padding: 2% 5%;
+    border-radius: 8px;
+    
+}
+
+.tituloFormContainer{
+    background-color: rgb(232, 206, 191);
+    padding: 1px 0;
+    margin-top: 10px;
+    width: 85%;
+    margin-left: 12.5%;
+}
+
+.tituloFormCarrito{
+    margin-left: 10%;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 0.8em;
+    font-weight: bold;
+    color: rgb(12, 86, 103);
+}
+
+.tituloFormCarrito2{
+    width: 350px;
+    margin: 10px 0 10px 27%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.div_trashIcon{
+    cursor: pointer;
 }
 
 #formCompra {
     display: flex;
     flex-direction: column;
-    margin: 5% 30%;
+    margin: 5% 20% 5% 30%;
 }
 
 .inputFieldCompra{
     margin-bottom: 20px;
 }
 
-#ul_carrito{
-    padding: 5%;
-}
-.li_itemCarrito{
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: 60% 35% 5%;
-    row-gap: 50px;
+.inputFieldCompra{
+    padding-left: 10px;
 }
 
-#div_precioTotal{
+.errorDiv{
+    padding: 8px;
+    margin-bottom: 20px;
+    color: red;
     font-weight: bold;
-    padding: 0 43% 3% 38%;
-    font-size: 23px;
-    display: flex;
-    justify-content: space-between;
-
 }
 
 @media (min-width: 600px){
     #ul_carrito{
-        padding: 3% 30% 0 30%;
+        padding: 3% 15% 5% 20%;
     }
 }
 
