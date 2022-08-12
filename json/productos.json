@@ -1,0 +1,34 @@
+[{
+    "id": 1,
+    "titulo": "Cómo era ser pequeño",
+    "autor": "Luis Pescetti",
+    "editorial": "Editorial Siglo XXI",
+    "idBoton": "carrito_serPequeno",
+    "img": "../img/como-era-ser-pequeno.jpg",
+    "precioLista": 2599,
+    "precioFinal": 1899,
+    "descuento": "25% OFF"
+},
+{
+    "id": 2,
+    "titulo": "El arte de la guerra",
+    "autor": "Sun Tzu",
+    "editorial": "Editorial Alfaguara",
+    "idBoton": "carrito_guerra",
+    "img": "../img/el-arte-de-la-guerra.jpg",
+    "precioLista": 1999,
+    "precioFinal": 1499,
+    "descuento": "25% OFF"
+},
+{
+    "id": 3,
+    "titulo": "Boquita",
+    "autor": "Martín Caparrós",
+    "editorial": "Editorial Sudamericana",
+    "idBoton": "carrito_boquita",
+    "img": "../img/boquita.png",
+    "precioLista": 2899,
+    "precioFinal": 2199,
+    "descuento": "25% OFF"
+}
+]

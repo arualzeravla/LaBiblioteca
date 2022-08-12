@@ -1,25 +1,3 @@
-//DEFINO PRODUCTOS EN STOCK
-
-let productos = [{
-        id: 1,
-        titulo: "Cómo era ser pequeño",
-        precio: 1899,
-        idBoton: "carrito_serPequeno"
-    },
-    {
-        id: 2,
-        titulo: "El arte de la guerra",
-        precio: 1499,
-        idBoton: "carrito_guerra"
-    },
-    {
-        id: 3,
-        titulo: "Boquita",
-        precio: 2199,
-        idBoton: "carrito_boquita"
-    }
-]
-
 
 //CAPTURO EL CARRITO DEL LOCAL STORAGE(LS) Y LO PARSEO EN LA VARIABLE "carrito". EN CASO DE NO EXISTIR AÚN, CREO LA VARIABLE COMO UN ARRAY VACÍO
 
@@ -30,14 +8,15 @@ let carrito = JSON.parse(localStorage.getItem("carrito"));
 
 //CREO FUNCION PARA RENDERIZAR EL PRECIO FINAL QUE SERA UTILIZADA PARA RENDERIZAR EL CARRITO
 
+
 function actualizarPrecioFinal() {
     let totalDiv = document.getElementById("div_sumaPrecio");
     let precio = 0;
     if (carrito.length != 0){
         for (producto of carrito) {
-        precio = precio + producto.precio;
-        let precioFinal = precio.toFixed(2);
-        totalDiv.innerHTML = ` $ ${precioFinal} `;
+        precio = precio + producto.precioFinal;
+        let precioTotal = precio.toFixed(2);
+        totalDiv.innerHTML = ` $ ${precioTotal} `;
         }
     } else {
         document.getElementById("div_precioTotText").remove();
@@ -45,12 +24,13 @@ function actualizarPrecioFinal() {
     }
 };
 
+
 //INSERTO EL CARRITO ENCONTRADO EN EL HTML Y EJECUTO LA RENDERIZACION
 
 function renderizarCarrito() {
     let carritoUl = document.getElementById("ul_carrito");
         for (item of carrito) {
-            let precioFormatted = item.precio.toFixed(2);
+            let precioFormatted = item.precioFinal.toFixed(2);
             carritoUl.innerHTML += `<li class="li_itemCarrito"> 
                                     <div class="div_tituloCarrito">${item.titulo}</div>
                                     <div class="div_precioCarrito"> $ ${precioFormatted}</div>
@@ -61,6 +41,8 @@ function renderizarCarrito() {
 };
 
 renderizarCarrito();
+
+
 
 
 
