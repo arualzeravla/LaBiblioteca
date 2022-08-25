@@ -14,10 +14,8 @@ a:hover{
     color: black;
 }
 
-#footer{
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
+footer{
+    padding-top: 30px;
 }
 
 /* HOME */
@@ -42,16 +40,14 @@ a:hover{
 /*  SECCION PRODUCTOS */
 
 .div_sectionTitle{
-    font-weight: bold;
     margin-bottom: 20px;
-    background-color: rgb(255, 254, 178);
     width: 90vw;
-    padding: 5% 0 2% 5%;
+    padding: 2% 0 1% 0;
     border-radius: 5px;
 }
 
 .div_seccionProductos{
-    padding-top: 5%;
+    padding-top: 2.5%;
     padding-left: 20px;
 }
 
@@ -82,7 +78,7 @@ a:hover{
     }
     
     .div_sectionTitle{
-        padding: 5% 0 2% 5%;
+        padding: 5% 0 2% 0;
     }
 
 
@@ -227,5 +223,12 @@ a:hover{
     
 }
 
+/* PAGINA DETALLES */
 
+#detailContainer{
+    display: flex;
+}
 
+#textDetailContainer{
+    padding-left: 10%;
+}

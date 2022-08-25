@@ -30,5 +30,114 @@
     "precioLista": 2899,
     "precioFinal": 2199,
     "descuento": "25% OFF"
+},
+
+{
+    "id": 4,
+    "titulo": "El libro de la esperanza",
+    "autor": "Jane Goodall & Douglas Abrams",
+    "editorial": "Editorial Oceano",
+    "idBoton": "carrito_libroEsperanza",
+    "img": "../img/libroEsperanza.jpg",
+    "precioLista": 5900,
+    "precioFinal": 5900,
+    "descuento": 0
+},
+
+{
+    "id": 5,
+    "titulo": "La fuga de Siberia en un trineo de renos",
+    "autor": "León Trotsky",
+    "editorial": "Editorial Siglo XXI",
+    "idBoton": "carrito_lafuga",
+    "img": "../img/lafuga.png",
+    "precioLista": 2900,
+    "precioFinal": 2900,
+    "descuento": 0
+},
+
+{
+    "id": 6,
+    "titulo": "La épica conquista de Genie Lo",
+    "autor": "Christian Yee",
+    "editorial": "Editorial Oceano",
+    "idBoton": "carrito_epicaconquista",
+    "img": "../img/epicaconquista.jpg",
+    "precioLista": 3600,
+    "precioFinal": 3600,
+    "descuento": 0
+},
+
+{
+    "id": 7,
+    "titulo": "La guerra de las mariconas",
+    "autor": "Copi",
+    "editorial": "El cuenco de plata",
+    "idBoton": "carrito_copimariconas",
+    "img": "../img/mariconas.jpg",
+    "precioLista": 2899,
+    "precioFinal": 2899,
+    "descuento": 0
+},
+
+{
+    "id": 8,
+    "titulo": "Lenin TV",
+    "autor": "Bruno Bauer",
+    "editorial": "La Parte Maldita",
+    "idBoton": "carrito_lenintv",
+    "img": "../img/Lenin.jpg",
+    "precioLista": 2199,
+    "precioFinal": 2199,
+    "descuento": 0
+},
+
+{
+    "id": 9,
+    "titulo": "Maddaddam",
+    "autor": "Margaret Atwood",
+    "editorial": "Salamandra",
+    "idBoton": "carrito_maddaddam",
+    "img": "../img/Maddaddam.png",
+    "precioLista": 3400,
+    "precioFinal": 3400,
+    "descuento": 0
+},
+
+{
+    "id": 10,
+    "titulo": "Alias",
+    "autor": "Jorge Luis Borges & Adolfo Bioy Casares",
+    "editorial": "Editorial Sudamericana",
+    "idBoton": "carrito_alias",
+    "img": "../img/Alias.png",
+    "precioLista": 3400,
+    "precioFinal": 3400,
+    "descuento": 0
+},
+
+{
+    "id": 11,
+    "titulo": "El significado del fuego",
+    "autor": "Kike Ferrari",
+    "editorial": "Editorial Alfaguara",
+    "idBoton": "carrito_sigfuego",
+    "img": "../img/Fuego.png",
+    "precioLista": 3200,
+    "precioFinal": 3200,
+    "descuento": 0
+},
+
+{
+    "id": 12,
+    "titulo": "El Eternauta",
+    "autor": "Héctor Oesterheld & Francisco Solano López",
+    "editorial": "Doedytores",
+    "idBoton": "carrito_eternauta",
+    "img": "../img/El_Eternauta.jpg",
+    "precioLista": 1700,
+    "precioFinal": 1700,
+    "descuento": 0
 }
+
 ]
