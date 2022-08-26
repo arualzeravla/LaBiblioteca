@@ -3,7 +3,32 @@ let prodVistoJSON = localStorage.getItem("prodVisto");
 let prodVisto = JSON.parse(prodVistoJSON);
 
 let divDetallesContainer = document.getElementById("detailPageContainer");
-divDetallesContainer.innerHTML = `
+if (prodVisto.descuento != 0) {
+    divDetallesContainer.innerHTML = `
+        <div class="div_sectionTitle">
+            <h2 id="h2_bookTitle">${prodVisto.titulo}</h2>
+            <h3 id="h3_bookauthor">Por ${prodVisto.autor}</h3>
+        </div>
+
+        <div id="detailContainer">
+            <img src=${prodVisto.img} alt="Portada" />
+            <div id="textDetailContainer">
+                <p id="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem nesciunt
+                ipsa. Ratione amet numquam officia culpa optio! Perspiciatis nostrum soluta molestiae est?
+                Placeat asperiores eos cupiditate, harum nisi voluptate.</p>
+                <p id="editorial">${prodVisto.editorial}</p>
+                <div id="infoPrecios">
+                    <p class="p_precioLista" id="enOferta_precioLista">$ ${prodVisto.precioLista}</p>
+                    <span class="span_precioOferta" id="enOferta_precioFinal">$ ${prodVisto.precioFinal} </span>
+                    <span class="span_descuento" id="enOferta_descuento">${prodVisto.descuento}</span>
+                    <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id="${prodVisto.idBoton}">Agregar al carrito &raquo;</button>
+                </div>
+            </div>
+        </div>`
+} else{
+
+    divDetallesContainer.innerHTML = `
     <div class="div_sectionTitle">
         <h2 id="h2_bookTitle">${prodVisto.titulo}</h2>
         <h3 id="h3_bookauthor">Por ${prodVisto.autor}</h3>
@@ -12,22 +37,19 @@ divDetallesContainer.innerHTML = `
     <div id="detailContainer">
         <img src=${prodVisto.img} alt="Portada" />
         <div id="textDetailContainer">
-            <p id="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem nesciunt
-            ipsa. Ratione amet numquam officia culpa optio! Perspiciatis nostrum soluta molestiae est?
-            Placeat asperiores eos cupiditate, harum nisi voluptate.</p>
-            <p id="editorial">${prodVisto.editorial}</p>
+            <p id="descripcion">${prodVisto.descripcion}</p>
+            <p id="editorial">EDITORIAL: ${prodVisto.editorial}</p>
             <div id="infoPrecios">
-                <p class="p_precioLista" id="enOferta_precioLista">$ ${prodVisto.precioLista}</p>
                 <span class="span_precioOferta" id="enOferta_precioFinal">$ ${prodVisto.precioFinal} </span>
-                <span class="span_descuento" id="enOferta_descuento">${prodVisto.descuento}</span>
                 <button type="button" class="btn btn-primary btn_carrito" data-bs-toggle="modal"
                     data-bs-target="#exampleModal" id="${prodVisto.idBoton}">Agregar al carrito &raquo;</button>
             </div>
         </div>
     </div>`
 
+}
 
-    fetch("../json/productos.json")
+fetch("../json/productos.json")
     .then(response => response.json())
     .then(productos => {
 
@@ -53,13 +75,31 @@ divDetallesContainer.innerHTML = `
 
         let botonCompra = document.querySelector("button.btn_carrito");
         botonCompra.addEventListener('click', function (e) {
-                let botonID = e.target.id;
+            let botonID = e.target.id;
+            for (producto of productos) {
+                if (botonID === producto.idBoton) {
+                    carrito.push(producto);
+                    let carritoJ = JSON.stringify(carrito)
+                    localStorage.setItem("carrito", carritoJ);
+                }
+            };
+        });
+
+        let categoriaSolicitada = [];
+        
+        let linkResultados = document.querySelectorAll("a.dropdown-item");
+        linkResultados.forEach((link) => {
+            link.addEventListener('click', function (e) {
+                let linkID = e.target.id;
                 for (producto of productos) {
-                    if (botonID === producto.idBoton) {
-                        carrito.push(producto);
-                        let carritoJ = JSON.stringify(carrito)
-                        localStorage.setItem("carrito", carritoJ);
+                    if (linkID === producto.categoria) {
+                        categoriaSolicitada.push(producto);
+                        let categoriaSolicitadaJ = JSON.stringify(categoriaSolicitada)
+                        localStorage.setItem("categoriaSolicitada", categoriaSolicitadaJ);
                     }
                 };
-        });
+            })
+        })
+
+
     });

@@ -12,15 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
 
+    <!-- FONTAWSOME -->
+    <script src="https://kit.fontawesome.com/578030f300.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/index.css">
 
-    <!-- ICONS - FontAwsome -->
-    <script src="https://kit.fontawesome.com/b6a0ddfe99.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -28,8 +29,7 @@
     <header>
         <nav class="navbar navbar-expand-md nav_headerContainer">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="img_logo" src="../img/Logo.jpg"
-                        alt="LA BIBLIOTECA"></a>
+                <a class="navbar-brand" href="../index.html"><img class="img_logo" src="../img/Logo.jpg" alt="LA BIBLIOTECA"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -39,25 +39,21 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./promociones.html">PROMOCIONES</a>
+                            <a class="nav-link" href="./promociones.html">PROMOCIONES</a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
-                                aria-expanded="false">CATÁLOGO</a>
+                            aria-expanded="false">CATEGORÍAS</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown04">
-                                <li><a class="dropdown-item" href="#">Arte, Arquitectura y Diseño</a></li>
-                                <li><a class="dropdown-item" href="#">Ciencias</a></li>
-                                <li><a class="dropdown-item" href="#">Educación</a></li>
-                                <li><a class="dropdown-item" href="#">Esoterismo</a></li>
-                                <li><a class="dropdown-item" href="#">Ficción y Literatura</a></li>
-                                <li><a class="dropdown-item" href="#">Gastronomía</a></li>
-                                <li><a class="dropdown-item" href="#">Infantil y juvenil</a></li>
-                                <li><a class="dropdown-item" href="#">Negocios</a></li>
-                                <li><a class="dropdown-item" href="#">Turismo</a></li>
+                                <li><a class="dropdown-item" id="Autoayuda" href="./resultados.html">Autoayuda</a></li>
+                                <li><a class="dropdown-item" id="Deportes" href="./resultados.html">Deportes</a></li>
+                                <li><a class="dropdown-item" id="Historieta" href="./resultados.html">Historieta</a></li>
+                                <li><a class="dropdown-item" id="Humanidades" href="./resultados.html">Humanidades</a></li>
+                                <li><a class="dropdown-item" id="Literatura" href="./resultados.html">Literatura</a></li>
                             </ul>
                         </li>
 
@@ -67,12 +63,15 @@
 
 
                     </ul>
-                    <form role="search">
+
+                    <form role="search" id="searchForm">
                         <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
                     </form>
+                    
                 </div>
             </div>
         </nav>
+        <a href="./carrito.html"><i class="fa-solid fa-cart-shopping" id="cartIcon"></i></a>
     </header>
 
     <main>

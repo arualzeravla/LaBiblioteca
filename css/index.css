@@ -31,11 +31,33 @@ footer{
     background-color: #60c3c3;
 }
 
+
+#cartIcon{
+    font-size: 24px;
+    padding: 0 10px;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    color:rgb(56, 56, 56);
+}
+
+#searchForm{
+    margin-right: 55px;
+}
+
+@media (max-width: 768px) {
+    #cartIcon{
+        right: 70px;
+    }
+}
+
 /* CARRUSEL */
 
 .span_carouselArrow{
     filter: invert(100%);
 }
+
+
 
 /*  SECCION PRODUCTOS */
 
@@ -231,4 +253,12 @@ footer{
 
 #textDetailContainer{
     padding-left: 10%;
+}
+
+
+/* PAGINA RESULTADOS */
+
+.imgResultados{
+    width: 120px;
+    padding-bottom: 50px;
 }

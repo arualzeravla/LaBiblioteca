@@ -2,70 +2,82 @@
     "id": 1,
     "titulo": "Cómo era ser pequeño",
     "autor": "Luis Pescetti",
-    "editorial": "Editorial Siglo XXI",
+    "editorial": "Siglo XXI",
     "idBoton": "carrito_serPequeno",
     "img": "../img/como-era-ser-pequeno.jpg",
     "precioLista": 2599,
     "precioFinal": 1899,
-    "descuento": "25% OFF"
+    "descuento": "25% OFF",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Humanidades"
 },
 {
     "id": 2,
     "titulo": "El arte de la guerra",
     "autor": "Sun Tzu",
-    "editorial": "Editorial Alfaguara",
+    "editorial": "Alfaguara",
     "idBoton": "carrito_guerra",
     "img": "../img/el-arte-de-la-guerra.jpg",
     "precioLista": 1999,
     "precioFinal": 1499,
-    "descuento": "25% OFF"
+    "descuento": "25% OFF",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Autoayuda"
 },
 {
     "id": 3,
     "titulo": "Boquita",
     "autor": "Martín Caparrós",
-    "editorial": "Editorial Sudamericana",
+    "editorial": "Sudamericana",
     "idBoton": "carrito_boquita",
     "img": "../img/boquita.png",
     "precioLista": 2899,
     "precioFinal": 2199,
-    "descuento": "25% OFF"
+    "descuento": "25% OFF",
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Deportes"
 },
 
 {
     "id": 4,
     "titulo": "El libro de la esperanza",
     "autor": "Jane Goodall & Douglas Abrams",
-    "editorial": "Editorial Oceano",
+    "editorial": "Oceano",
     "idBoton": "carrito_libroEsperanza",
     "img": "../img/libroEsperanza.jpg",
     "precioLista": 5900,
     "precioFinal": 5900,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Humanidades"
 },
 
 {
     "id": 5,
     "titulo": "La fuga de Siberia en un trineo de renos",
     "autor": "León Trotsky",
-    "editorial": "Editorial Siglo XXI",
+    "editorial": "Siglo XXI",
     "idBoton": "carrito_lafuga",
     "img": "../img/lafuga.png",
     "precioLista": 2900,
     "precioFinal": 2900,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Literatura"
 },
 
 {
     "id": 6,
     "titulo": "La épica conquista de Genie Lo",
     "autor": "Christian Yee",
-    "editorial": "Editorial Oceano",
+    "editorial": "Oceano",
     "idBoton": "carrito_epicaconquista",
     "img": "../img/epicaconquista.jpg",
     "precioLista": 3600,
     "precioFinal": 3600,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Literatura"
 },
 
 {
@@ -77,7 +89,9 @@
     "img": "../img/mariconas.jpg",
     "precioLista": 2899,
     "precioFinal": 2899,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Historieta"
 },
 
 {
@@ -89,7 +103,9 @@
     "img": "../img/Lenin.jpg",
     "precioLista": 2199,
     "precioFinal": 2199,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Historieta"
 },
 
 {
@@ -101,31 +117,37 @@
     "img": "../img/Maddaddam.png",
     "precioLista": 3400,
     "precioFinal": 3400,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Literatura"
 },
 
 {
     "id": 10,
     "titulo": "Alias",
     "autor": "Jorge Luis Borges & Adolfo Bioy Casares",
-    "editorial": "Editorial Sudamericana",
+    "editorial": "Sudamericana",
     "idBoton": "carrito_alias",
     "img": "../img/Alias.png",
     "precioLista": 3400,
     "precioFinal": 3400,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Literatura"
 },
 
 {
     "id": 11,
     "titulo": "El significado del fuego",
     "autor": "Kike Ferrari",
-    "editorial": "Editorial Alfaguara",
+    "editorial": "Alfaguara",
     "idBoton": "carrito_sigfuego",
     "img": "../img/Fuego.png",
     "precioLista": 3200,
     "precioFinal": 3200,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Literatura"
 },
 
 {
@@ -137,7 +159,9 @@
     "img": "../img/El_Eternauta.jpg",
     "precioLista": 1700,
     "precioFinal": 1700,
-    "descuento": 0
+    "descuento": 0,
+    "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque totam recusandae molestias temporibus hic possimus! Fugiat nisi odio iusto animi voluptatem explicabo mollitia sapiente! Fuga saepe omnis nostrum recusandae?",
+    "categoria": "Historieta"
 }
 
 ]
