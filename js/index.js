@@ -1,7 +1,7 @@
 fetch("./json/productos.json")
     .then(response => response.json())
     .then(productos => {
-
+        console.log(productos);
         let prodVisto = [];
         
         let linkDetalles = document.querySelectorAll("a.linkDetalles");
