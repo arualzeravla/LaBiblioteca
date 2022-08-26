@@ -1,4 +1,4 @@
-fetch("../json/productos.json")
+fetch("./json/productos.json")
     .then(response => response.json())
     .then(productos => {
 
@@ -6,6 +6,7 @@ fetch("../json/productos.json")
         
         let linkDetalles = document.querySelectorAll("a.linkDetalles");
         linkDetalles.forEach((link) => {
+            console.log(link);
             link.addEventListener('click', function (e) {
                 let linkID = e.target.id;
                 for (producto of productos) {
