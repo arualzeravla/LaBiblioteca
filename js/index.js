@@ -35,4 +35,18 @@ fetch("../json/productos.json")
             })
         })
 
+
+        let searchInput = document.getElementById("searchInput");
+
+        searchInput.addEventListener("search", ()=>{
+            for (producto of productos){
+                if(searchInput.value.toLowerCase() === producto.titulo.toLowerCase || searchInput.value.toLowerCase() === producto.autor.toLowerCase){
+                    categoriaSolicitada.push(producto);
+                    let categoriaSolicitadaJ = JSON.stringify(categoriaSolicitada)
+                    localStorage.setItem("categoriaSolicitada", categoriaSolicitadaJ);
+                }
+            }
+        })
+
+
     });
