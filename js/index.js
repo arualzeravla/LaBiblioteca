@@ -1,12 +1,10 @@
 fetch("./json/productos.json")
     .then(response => response.json())
     .then(productos => {
-        console.log(productos);
         let prodVisto = [];
         
         let linkDetalles = document.querySelectorAll("a.linkDetalles");
         linkDetalles.forEach((link) => {
-            console.log(link);
             link.addEventListener('click', function (e) {
                 let linkID = e.target.id;
                 for (producto of productos) {
