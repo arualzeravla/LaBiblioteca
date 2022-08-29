@@ -92,8 +92,8 @@ function validarFormulario(e) {
             title: '¡Tu compra ha sido realizada!',
             text: 'Te contactaremos dentro de las próximas 48hs hábiles para confirmar el pago y acordar el envío.',
         })
-        carrito = [];
-        localStorage.setItem("carrito", carrito);
+
+        localStorage.setItem("carrito", "[]");
     }
 
 };
