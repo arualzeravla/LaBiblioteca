@@ -94,6 +94,8 @@ function validarFormulario(e) {
         })
 
         localStorage.setItem("carrito", "[]");
+        setTimeout ( ()=>{window.location.href = "../index.html"}, 6000 );
+        
     }
 
 };
