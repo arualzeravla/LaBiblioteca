@@ -82,9 +82,12 @@ function validarFormulario(e) {
     e.preventDefault();
     let errorDiv = document.getElementById("errorDiv");
 
-    if (!e.target.children[0].value || !e.target.children[1].value || !e.target.children[2].value || !e.target.children[3].value || !e.target.children[4].value) {
+    if (!e.target.children[0].value || !e.target.children[1].value || !e.target.children[2].value || !e.target.children[3].value || !e.target.children[4].value ) {
         errorDiv.classList.add("errorDiv")
         errorDiv.innerHTML = " [x] Debes ingresar todos los datos solicitados";
+    } else if (carrito.length === 0){
+        errorDiv.classList.add("errorDiv")
+        errorDiv.innerHTML = " [x] Tu carrito está vacío! Agrega tu producto deseado para procesar la compra.";
     } else {
         errorDiv.innerHTML = "";
         Swal.fire({
