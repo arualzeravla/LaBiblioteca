@@ -1,6 +1,6 @@
  /* Evento de la barra de búsqueda, que atrapa el input y lo compara con el json de productos para renderizarlo en la página "resultados.html" */
 
- if (window.location.pathname === "/index.html") {
+ if (window.location.pathname === "/LaBiblioteca/") {
      fetch("./json/productos.json")
          .then(response => response.json())
          .then(productos => {

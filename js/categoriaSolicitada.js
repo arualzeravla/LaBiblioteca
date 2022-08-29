@@ -1,6 +1,6 @@
  /* Evento de opciones del nav bar, dropdown "CATEGORÍAS", que atrapa la categoría seleccionada y la guardar en el local storage como "categoriaSolicitada" para renderizar en la página "resultados.html": */
 
- if(window.location.pathname === "/index.html"){
+ if(window.location.pathname === "/LaBiblioteca/"){
 
     fetch("./json/productos.json")
     .then(response => response.json())
