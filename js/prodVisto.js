@@ -1,5 +1,5 @@
 /* Evento de botones "Ver más" que atrape la información del libro que se desea ver y guardarla en el local storage como "prodVisto" para renderizar luego en la página "detalles.html" según "detalles.js": */
-
+console.log(window.location.pathname);
 if (window.location.pathname === "/index.html") {
 
     fetch("./json/productos.json")
