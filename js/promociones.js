@@ -1,3 +1,5 @@
+/* Se inserta en el html únicamente los productos que tengan descuento indicado en productos.json */
+
 fetch("../json/productos.json")
     .then(response => response.json())
     .then(productos => {
@@ -20,58 +22,4 @@ fetch("../json/productos.json")
             }
         })
 
-
-
-        //CREO VARIABLE CARRITO
-        let carrito;
-
-        //VERIFICO EL LOCAL STORAGE. SI YA HAY UN CARRITO, LO ATRAPO -PARSEADO- EN LA VARIABLE carrito. DE LO CONTRARIO, LE ASIGNO A carrito EL VALOR DE UN ARRAY VACÍO.
-
-        function verificarCarrito() {
-            if (!localStorage.getItem("carrito")) {
-                carrito = [];
-                console.log("carrito vacío");
-            } else {
-                let carritoJSON = localStorage.getItem("carrito");
-                carrito = JSON.parse(carritoJSON);
-            }
-        };
-
-        verificarCarrito();
-
-
-        // AGREGO UN EVENT LISTENER A TODOS LOS BOTONES "AGREGAR A CARRITO". BUSCO CUÁL ES EL PRODUCTO AGREGADO, SE EJECUTA LA FUNCIÓN verificarCarrito() PARA OBTENER EL ARRAY CARRITO QUE HAYA HASTA EL MOMENTO Y SE LE AGREGA EL PRODUCTO. LUEGO SE ENVÍA AL LOCAL STORAGE NUEVAMENTE. 
-
-        let botonesCompra = document.querySelectorAll("button.btn_carrito");
-        botonesCompra.forEach((btn) => {
-            //console.log(btn);
-            btn.addEventListener('click', function (e) {
-                let botonID = e.target.id;
-                for (producto of productos) {
-                    console.log(botonID);
-                    if (botonID === producto.idBoton) {
-                        carrito.push(producto);
-                        let carritoJ = JSON.stringify(carrito)
-                        localStorage.setItem("carrito", carritoJ);
-                    }
-                };
-            })
-        });
-
-
-        let categoriaSolicitada = [];
-        
-        let linkResultados = document.querySelectorAll("a.dropdown-item");
-        linkResultados.forEach((link) => {
-            link.addEventListener('click', function (e) {
-                let linkID = e.target.id;
-                for (producto of productos) {
-                    if (linkID === producto.categoria) {
-                        categoriaSolicitada.push(producto);
-                        let categoriaSolicitadaJ = JSON.stringify(categoriaSolicitada)
-                        localStorage.setItem("categoriaSolicitada", categoriaSolicitadaJ);
-                    }
-                };
-            })
-        })
     });

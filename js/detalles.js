@@ -1,9 +1,10 @@
+/* Se llama a "prodVisto" del local storage guardado según se indica en index.js o resultados.js y se renderiza su contenido: */
 
 let prodVistoJSON = localStorage.getItem("prodVisto");
 let prodVisto = JSON.parse(prodVistoJSON);
 
 let divDetallesContainer = document.getElementById("detailPageContainer");
-if (prodVisto.descuento != 0) {
+if (prodVisto.descuento != 0) { /* se renderiza con el formato de libro en oferta (descuento, etc) */
     divDetallesContainer.innerHTML = `
         <div class="div_sectionTitle">
             <h2 id="h2_bookTitle">${prodVisto.titulo}</h2>
@@ -11,7 +12,7 @@ if (prodVisto.descuento != 0) {
         </div>
 
         <div id="detailContainer">
-            <img src=${prodVisto.img} alt="Portada" />
+            <img id="img_detallesPage" src=${prodVisto.img} alt="Portada" />
             <div id="textDetailContainer">
                 <p id="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem nesciunt
                 ipsa. Ratione amet numquam officia culpa optio! Perspiciatis nostrum soluta molestiae est?
@@ -26,7 +27,7 @@ if (prodVisto.descuento != 0) {
                 </div>
             </div>
         </div>`
-} else{
+} else{ /* se renderiza sin el formato de oferta */
 
     divDetallesContainer.innerHTML = `
     <div class="div_sectionTitle">
@@ -35,7 +36,7 @@ if (prodVisto.descuento != 0) {
     </div>
 
     <div id="detailContainer">
-        <img src=${prodVisto.img} alt="Portada" />
+        <img id="img_detallesPage" src=${prodVisto.img} alt="Portada" />
         <div id="textDetailContainer">
             <p id="descripcion">${prodVisto.descripcion}</p>
             <p id="editorial">EDITORIAL: ${prodVisto.editorial}</p>
@@ -48,58 +49,3 @@ if (prodVisto.descuento != 0) {
     </div>`
 
 }
-
-fetch("../json/productos.json")
-    .then(response => response.json())
-    .then(productos => {
-
-        //CREO VARIABLE CARRITO
-        let carrito;
-
-        //VERIFICO EL LOCAL STORAGE. SI YA HAY UN CARRITO, LO ATRAPO -PARSEADO- EN LA VARIABLE carrito. DE LO CONTRARIO, LE ASIGNO A carrito EL VALOR DE UN ARRAY VACÍO.
-
-        function verificarCarrito() {
-            if (!localStorage.getItem("carrito")) {
-                carrito = [];
-                console.log("carrito vacío");
-            } else {
-                let carritoJSON = localStorage.getItem("carrito");
-                carrito = JSON.parse(carritoJSON);
-            }
-        };
-
-        verificarCarrito();
-
-
-        // AGREGO UN EVENT LISTENER A TODOS LOS BOTONES "AGREGAR A CARRITO". BUSCO CUÁL ES EL PRODUCTO AGREGADO, SE EJECUTA LA FUNCIÓN verificarCarrito() PARA OBTENER EL ARRAY CARRITO QUE HAYA HASTA EL MOMENTO Y SE LE AGREGA EL PRODUCTO. LUEGO SE ENVÍA AL LOCAL STORAGE NUEVAMENTE. 
-
-        let botonCompra = document.querySelector("button.btn_carrito");
-        botonCompra.addEventListener('click', function (e) {
-            let botonID = e.target.id;
-            for (producto of productos) {
-                if (botonID === producto.idBoton) {
-                    carrito.push(producto);
-                    let carritoJ = JSON.stringify(carrito)
-                    localStorage.setItem("carrito", carritoJ);
-                }
-            };
-        });
-
-        let categoriaSolicitada = [];
-        
-        let linkResultados = document.querySelectorAll("a.dropdown-item");
-        linkResultados.forEach((link) => {
-            link.addEventListener('click', function (e) {
-                let linkID = e.target.id;
-                for (producto of productos) {
-                    if (linkID === producto.categoria) {
-                        categoriaSolicitada.push(producto);
-                        let categoriaSolicitadaJ = JSON.stringify(categoriaSolicitada)
-                        localStorage.setItem("categoriaSolicitada", categoriaSolicitadaJ);
-                    }
-                };
-            })
-        })
-
-
-    });

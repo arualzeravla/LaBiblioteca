@@ -1,18 +1,15 @@
 
-//CAPTURO EL CARRITO DEL LOCAL STORAGE(LS) Y LO PARSEO EN LA VARIABLE "carrito". EN CASO DE NO EXISTIR AÚN, CREO LA VARIABLE COMO UN ARRAY VACÍO
+// Se declara la variable "carrito" con el valor de lo que haya ya en el carrito en el local storage. Si no existe, se le designa el valor de unarray vacío:
 
-let carrito = JSON.parse(localStorage.getItem("carrito"));
- if (!carrito) {
-    carrito = [];
-};
+let carrito =  JSON.parse(localStorage.getItem("carrito")) || [] ;
 
-//CREO FUNCION PARA RENDERIZAR EL PRECIO FINAL QUE SERA UTILIZADA PARA RENDERIZAR EL CARRITO
+// FUNCION PARA RENDERIZAR EL PRECIO FINAL 
 
 
 function actualizarPrecioFinal() {
     let totalDiv = document.getElementById("div_sumaPrecio");
     let precio = 0;
-    if (carrito.length != 0){
+    if (carrito && carrito.length != 0){
         for (producto of carrito) {
         precio = precio + producto.precioFinal;
         let precioTotal = precio.toFixed(2);
@@ -93,30 +90,10 @@ function validarFormulario(e) {
         Swal.fire({
             icon: 'success',
             title: '¡Tu compra ha sido realizada!',
-            text: 'Te contactaremos en menos de 48hs hábiles para confirmar el pago y acordar el envío.',
+            text: 'Te contactaremos dentro de las próximas 48hs hábiles para confirmar el pago y acordar el envío.',
         })
+        carrito = [];
+        localStorage.setItem("carrito", carrito);
     }
+
 };
-
-
-fetch("../json/productos.json")
-    .then(response => response.json())
-    .then(productos => {
-
-        let categoriaSolicitada = [];
-        
-        let linkResultados = document.querySelectorAll("a.dropdown-item");
-        linkResultados.forEach((link) => {
-            link.addEventListener('click', function (e) {
-                let linkID = e.target.id;
-                for (producto of productos) {
-                    if (linkID === producto.categoria) {
-                        categoriaSolicitada.push(producto);
-                        let categoriaSolicitadaJ = JSON.stringify(categoriaSolicitada)
-                        localStorage.setItem("categoriaSolicitada", categoriaSolicitadaJ);
-                    }
-                };
-            })
-        })
-
-    });

@@ -41,9 +41,14 @@ footer{
     color:rgb(56, 56, 56);
 }
 
-#searchForm{
+#searchInput{
     margin-right: 55px;
+    width: 200px;
 }
+
+/* #lupaBtn{
+    margin-right: 60px;
+} */
 
 @media (max-width: 768px) {
     #cartIcon{
@@ -84,6 +89,10 @@ footer{
 
 .div_producto{
     margin-bottom: 40px;
+}
+
+.fw-normal /* titulos */ {
+    padding-top: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -135,6 +144,16 @@ footer{
 .btn_pago{
     background-color: #1c8585;
 }
+
+#enOferta_autor{
+    line-height: 8px;
+}
+
+#enOferta_editorial{
+    line-height: 8px;
+}
+
+
 
 /* CARRITO */
 
@@ -247,12 +266,33 @@ footer{
 
 /* PAGINA DETALLES */
 
+#img_detallesPage{
+    max-width: 15vw;
+}
+
 #detailContainer{
     display: flex;
 }
 
 #textDetailContainer{
     padding-left: 10%;
+}
+
+@media (max-width: 768px){
+    #img_detallesPage{
+        max-width: 50vw;
+    }
+
+    #detailContainer{
+        display: block;
+    }
+
+    #descripcion{
+        text-align: left;
+    }
+    #textDetailContainer{
+        padding: 20px 20px 0 0;
+    }
 }
 
 
