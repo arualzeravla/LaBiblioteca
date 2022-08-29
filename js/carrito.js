@@ -4,7 +4,7 @@ fetch("../json/productos.json")
 
         // Se declara la variable "carrito" con el valor de lo que haya ya en el carrito en el local storage. Si no existe, se le designa el valor de unarray vacío:
 
-        let carrito =  JSON.parse(localStorage.getItem("carrito")) || [] ;
+        let carrito =  JSON.parse(localStorage.getItem("carrito")) || "[]" ;
 
         // Evento de todos los botones "Agregar al carrito" que identifica el producto seleccionado según el ID del botón, lo suma al array "carrito" y lo envía al local storage:
 
