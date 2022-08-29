@@ -1,4 +1,6 @@
-fetch("./json/productos.json")
+ /* Este archivo únicamente está ligado a index.html ya que necesita diferente ruta al json. Evento de la barra de búsqueda, que atrapa el input y lo compara con el json de productos para renderizarlo en la página "resultados.html" */
+
+ fetch("./json/productos.json")
     .then(response => response.json())
     .then(productos => {
 

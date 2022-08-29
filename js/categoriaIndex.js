@@ -1,4 +1,4 @@
- /* Evento de opciones del nav bar, dropdown "CATEGORÍAS", que atrapa la categoría seleccionada y la guardar en el local storage como "categoriaSolicitada" para renderizar en la página "resultados.html": */
+ /* Este archivo únicamente está ligado a index.html ya que necesita diferente ruta al json. Evento de opciones del nav bar, dropdown "CATEGORÍAS", que atrapa la categoría seleccionada y la guardar en el local storage como "categoriaSolicitada" para renderizar en la página "resultados.html": */
 
 
 
